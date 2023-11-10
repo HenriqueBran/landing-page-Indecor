@@ -1,0 +1,403 @@
+:root {
+    --cor-principal: #eb1ccc;
+    --cor-secundaria: #95989A;
+    --cor-texto: #FFF;
+    --cor-text-secubdaria: #000;
+    --cor-text-tercearia: #5d5d5d;
+}
+
+* {
+    font-family:  'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*para os elementos n passarem da área útil/ respeitar a largura maxima da div*/
+}
+
+
+/*Event form*/
+#event-description {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("../img/hrz-5.jpg"); /*escurecer o fundo da img*/
+    background-position: center; /*centralizar a foto*/
+    background-size: cover;/*para aparecer o máximo possivel ba area util*/
+    height: 85vh; /* altura de 85% da tela*/
+    display: flex;
+    justify-content: space-around; /*para o conteudo ficar igualmente espaçados nas bordas e no meio*/
+    align-items: center; /*alinhar os itens ao centro*/
+    color: var(--cor-texto);
+} 
+
+#disclaimer h2,
+#disclaimer .event-date {
+  color: var(--cor-principal);  
+}
+
+#disclaimer h2 {
+    font-size: 3em; 
+    margin-bottom: 1em; /*para espaçar dos elementos abaixo*/
+}
+
+#disclaimer .about-event {
+   font-size: 2em; 
+   text-transform: uppercase; /*serve para deixar as letras de determinado elemento maiúsculas.*/
+   max-width: 350px ;
+   font-weight: bold;
+   margin-bottom:  1em;
+}
+
+#disclaimer p {
+ font-size: 1.2em;
+ margin-bottom: .3em;   
+}
+
+#disclaimer .event-date {
+    font-weight: bold; /*para destacar o texto*/
+}
+
+#subscription-form {
+   background-color: var(--cor-secundaria); /*cor de fundo do formulário (caixa cinxa*/
+   padding: 2em ; /*dar epaço das informações e a borda*/
+   max-width: 22%; /* largura do formulário*/
+}
+
+#subscription-form p {
+    font-size: 1.5em;
+    color:  var(--cor-text-secubdaria);
+    margin-bottom: 1em;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column; /*um em baixo do outro*/
+    margin-bottom: .8em; /*dar espaço das opções do formulário*/
+
+}
+
+.form-group label {
+ color: var(--cor-text-tercearia);
+ margin-bottom: .3em;
+ font-weight: bold;   
+}
+
+.form-group input, 
+.form-group select {
+    padding:  6px 8px; /*separar o texto das bordas*/
+    border-radius: 5px ; /*permite arredondar as bordas de um elemento.*/
+    border: none; /*sem desenho da borda*/
+    outline: none; 
+}
+
+.btn {
+    background: var(--cor-principal) ;
+    color: var(--cor-texto);
+    text-transform: uppercase; /*serve para deixar as letras de determinado elemento maiúsculas.*/
+    width: 100%; 
+    border: none;
+    padding:12px ; /*para afastar o texto das bordas*/
+    cursor: pointer;/*para aparecer o ponteiro do mouse quando o usuario clicar*/
+    opacity: .8; /*para dar uma impressao do botão acenter com o hover/*/   
+}
+
+.btn:hover {
+    opacity: 1;
+}
+
+/*benefits section*/
+
+#key-benefits h2 {
+    background-color: var(--cor-secundaria);
+    text-align: center;
+    padding: 2em;
+    font-weight: 500;
+}
+
+.benefits {
+    display: flex; /*umm do lado do outro*/
+    justify-content: space-around; /*separalos igualmente*/
+    padding: 4em; /*afastar ele da div*/
+    width: 80%; /*largura*/
+    margin: 0 auto; /*para centralizar o conteudo*/
+}
+
+.benefit {
+   text-align: center;
+   display: flex ;
+   flex-direction: column; /*as imh em cima e o texto em baixo*/
+   align-items: center;
+   max-width: 20%; /*para ocupar somente o espaço escolhido*/
+   color: var(--cor-text-tercearia);
+}
+
+.benefit .benefit-img {
+    width: 250px; /*altura da img*/
+    height: 250px;/*largura da img*/
+    border-radius: 50%;
+    background-size: cover ; /*para aparecer o máximo possivel ba area util*/
+    background-position: center; /*para centralizar o máximo a img*/
+    margin-bottom: 1em; /*para afastar a img do texto*/
+
+}
+#benefit-1 {
+    background-image: url("../img/sqr-1.jpg");
+}
+#benefit-2 {
+    background-image: url("../img/sqr-2.jpg");
+}
+#benefit-3 {
+    background-image: url("../img/sqr-3.jpg");
+}
+
+/*Event location*/
+
+#location {
+    height: 400px;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("../img/hrz-1.jpg"); /*escurecer o fundo da img*/
+    background-position: center; /*centralizar a foto*/
+    background-size: cover;/*para aparecer o máximo possivel ba area util*/
+    display: flex; /*para deixar tudo na mesma linha*/
+    align-items: center;
+    justify-content: space-around;
+    color: var(--cor-texto);
+    margin-bottom: 3em;/*para afastar os itens abaixo*/
+
+}
+
+#addres, #about-location {
+    max-width:30%;
+}
+
+#address {
+    display: flex;
+}
+
+#address i {
+    color: var(--cor-principal);
+    font-size: 4em;
+    margin-right: 0.5em; /*para afastar do texto*/
+}
+
+#address-details {
+text-align: center;
+font-size: 1.3em;
+}
+
+#about-location h3 {
+    color: var(--cor-principal);
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    text-transform: uppercase; /*serve para deixar as letras de determinado elemento maiúsculas.*/
+}
+
+#about-location p {
+    line-height: 1.5em; /*para dar distancia entre as linhas do texto*/
+}
+
+/*Event details container*/
+
+#details{
+    width: 80%; /*largura*/
+    margin: 0 auto; /*para centralizar*/
+}
+
+.detail {
+    display: flex;
+    align-items: flex-start; /*aliar os itens de cima para baixo*/
+    justify-content: space-between;
+    gap: 5%; /*espaçamento interno*/
+    margin-bottom: 4em;
+}
+
+.detail img {
+    width: 50%;
+}
+
+.detail h3 {
+    margin-bottom: 1em; 
+    font-size: 2em;/* crescer o item/font*/
+    font-weight: 500; /*peso negrito*/
+}
+
+#detail-1 h3 {
+    font-size: 3em;
+    font-weight: 700;
+}
+
+.detail-description {
+    width: 100%; /*largura*/
+    padding-left: 2em; /*dar distancia nos itens*/
+
+}
+
+.detail-description ul {
+   list-style-position: inside /*para deixar os pontos da ul alinhadas dentro do conteudo*/; 
+}
+
+.detail-description ul li {
+    margin-bottom: .4em ; /*para afastar as informações de ul*/
+}
+
+.detail-description ul li:last-child {
+    font-weight: bold; /*para deixare em negrito*/
+}
+
+/*Call to action section*/
+
+#cta {
+    height: 400px;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("../img/hrz-1.jpg"); /*escurecer o fundo da img*/
+    background-position: center; /*centralizar a foto*/
+    background-size: cover;/*para aparecer o máximo possivel ba area util*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--cor-texto);
+}
+
+#cta h3 {
+    margin-bottom: 1.2em;/*para afastar o botão*/
+    font-size: 2em;
+    font-weight: 500; /*peso de negrito*/
+}
+
+#cta .btn {
+    width: 20%; /*largura*/
+    margin: 0 auto;/*centraliza o botão na horizoltal*/
+    font-weight: 600;
+    font-size: 1.2em;
+
+}
+/*footer*/
+
+
+#footer {
+    text-align: center;
+    color: var(--cor-secundaria);
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#footer h3 {
+   font-size: 1.8em;
+   margin-bottom: .5em; 
+}
+
+#footer p:nth-child(2) {
+ margin-bottom: 1em;
+ font-size:1.2em ;
+}
+
+#footer span {
+    font-weight: bold;
+}
+
+/*Mobile*/
+
+@media (max-width:450px){
+    .btn {
+        opacity: 1;
+    }
+
+    /*Event form*/
+    #event-description {
+        flex-direction: column;/*para colocar o formulário em baixo*/
+        height: auto;
+    }
+
+    #disclaimer {
+        padding: 2em;
+    }
+    #disclaimer  h2  {
+        margin-bottom: .5em;
+    }
+    #subscription-form {
+        max-width: 70%; /*posiciona o form na largura da tela mobile*/
+        margin-bottom: 2em;/*para afastar o form do "oq vc vai aprender"*/
+    }
+
+    /*benefits section*/
+.benefits {
+    flex-direction: column; /*um em baixo do outro*/
+    align-items: center;
+    width: auto;
+    padding: 2em;
+}
+
+.benefit {
+    max-width: 100%;/*para o p ocupar 100% da linha*/
+    margin-bottom:  2em;/*para afastar as informações*/
+
+}
+
+/*event location*/
+#location {
+    flex-direction: column; /*um em baixo do outro*/
+    height: auto;
+    text-align: center;
+    padding: 2em 0; /*em cima e em baix 2em e 0 nas laterais*/
+}
+
+#address {
+    order: 2;
+    flex-direction: column;
+    max-width: 100%;
+}
+#address i {
+    margin: .3em 0;   
+}
+
+#about-location {
+    order: 1;
+    max-height: 100%;
+}
+
+#about-location h3 {
+    margin-bottom: 0;
+}
+
+#about-location p{
+    display: none;
+}
+
+/*event details container*/
+
+.detail {
+    flex-direction: column;
+    margin-bottom: .5em;
+    gap: 0;
+
+}
+.detail img {
+    width: 100%;
+    margin:2em 0 ;
+
+}
+
+#detail-1 img {
+    display: none;
+}
+.detail-description {
+    padding: 0;
+}
+
+#detail-3 img {
+    order: 2;
+}
+#detail-3 .detail-description{
+    order: 1;
+}
+
+/*call to action section*/
+#cta {
+    text-align: center;
+}
+#cta .btn{
+    width: 80%; /*aumentar a largura do botão*/
+
+}
+}
+
